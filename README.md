@@ -1,5 +1,9 @@
 # Web-SurvivalScan_thread
+一个多线程快速验活，并且结果可以通过.html形式直观查看
 基于Web-SurvivalScan项目二开，项目地址https://github.com/AabyssZG/Web-SurvivalScan
+
+一万多个IP，并列出了对应的Web资产地址，这个时候就需要快速验证资产存活网上找了一圈，都没什么好用的工具。
+于是，就写了这个Web资产存活检测小工具：Web-SurvivalScan_thread
 
 二开的地方
 - 又单线程变成了多线程，通过-t参数指定
@@ -21,3 +25,19 @@ options:
                         Number of threads to use (default: 10)
 
 ```
+# 使用
+## 安装python库
+```
+pip3 install -r requirements.txt
+```
+## 常规使用
+线程默认是10
+```
+python3 .\test.py -f .\test.txt -s 15
+```
+跑完后，即可拿到导出的两个文件：output.txt 和 outerror.txt
+
+output.txt：导出验证存活成功（状态码200）的Web资产
+outerror.txt：导出其他状态码的Web资产，方便后期排查遗漏和寻找其他脆弱点
+.data/report.json：所有资产的运行数据，按JSON格式导出，方便处理
+report.html：将所有资产进行HTML可视化导出，方便整理
