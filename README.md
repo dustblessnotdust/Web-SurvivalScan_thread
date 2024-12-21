@@ -41,3 +41,4 @@ output.txt：导出验证存活成功（状态码200）的Web资产
 outerror.txt：导出其他状态码的Web资产，方便后期排查遗漏和寻找其他脆弱点
 .data/report.json：所有资产的运行数据，按JSON格式导出，方便处理
 report.html：将所有资产进行HTML可视化导出，方便整理
+![image](https://github.com/user-attachments/assets/4d01efae-2816-48e8-997b-77e8463640f6)
