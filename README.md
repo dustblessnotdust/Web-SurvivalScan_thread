@@ -35,7 +35,7 @@ pip3 install -r requirements.txt
 ## 常规使用
 线程默认是10
 ```
-python3 .\test.py -f .\test.txt -s 15
+python3 .\test.py -f .\test.txt -t 15
 ```
 跑完后，即可拿到导出的两个文件：output.txt 和 outerror.txt
 
