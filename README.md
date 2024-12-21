@@ -1,12 +1,14 @@
 # Web-SurvivalScan_thread
 一个多线程快速验活，并且结果可以通过.html形式直观查看
+
 基于Web-SurvivalScan项目二开，项目地址https://github.com/AabyssZG/Web-SurvivalScan
 
 一万多个IP，并列出了对应的Web资产地址，这个时候就需要快速验证资产存活网上找了一圈，都没什么好用的工具。
+
 于是，就写了这个Web资产存活检测小工具：Web-SurvivalScan_thread
 
-二开的地方
-- 又单线程变成了多线程，通过-t参数指定
+**二开的地方**
+- 由单线程变成了多线程，通过-t参数指定
 - 从原本的运行程序之后输入参数，变成了命令行输入
 - 删除了之前的又要指定文件又要知道路径，变成了-f参数指定文件和路径
 
